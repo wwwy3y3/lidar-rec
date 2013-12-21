@@ -53,5 +53,5 @@ for user in Person.users:
 # get n neighbors
 #for user in Person.users:
 for item in Person.users[0].neighbors[:5]:
-	uid= item[0]
-	print Person.users[Person.users.index(uid)].items[:1]
+	user= Person.users[Person.users.index(item[0])]
+	print user.items[:1]
